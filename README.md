@@ -1,8 +1,8 @@
 # dotfiles
-## Simple Script and basic .vimrc  and other dotfiles 
+## Simple Scripts and basic .vimrc  and other dotfiles
 
-+ Just realized that I need to split this up into a script to do initial backup of existing dotfiles
-+ Then a script to create the symlinks
-+ As github will now create the $HOME/dotfiles  directories and files for me when folks clone it
++ Bug:  the .ssh/config link breaks ssh, most likely an SELinux Issue
++ Small but decent set of simple .vimrc options, more to be added over time
++ Three scripts should be run in order (1 2 3)
++ A lot of room for improvement
 
-+ Updates will come later tomorrow :)
