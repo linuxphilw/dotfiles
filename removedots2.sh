@@ -11,7 +11,7 @@ if [ ! -d $HOME/$backupdir -o ! -d $HOME/$sourcedir ]; then
 fi
 
 #listing files
-listoffiles=".vimrc .config/kcminputrc .ssh/config"
+listoffiles=".vimrc .config/kcminputrc"
 
 #DANGEROUS PART
 echo "This next part is dangerous so make sure"
