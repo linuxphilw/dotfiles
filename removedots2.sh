@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#This script removes the old dotfiles, MAKE SURE TO RUN backup_orig_dots.sh first
+echo "This script removes the old dotfiles, MAKE SURE TO RUN backupdots1.sh first"
+
 backupdir=".dotfiles_orig"
 sourcedir="dotfiles"
 if [ ! -d $HOME/$backupdir -o ! -d $HOME/$sourcedir ]; then

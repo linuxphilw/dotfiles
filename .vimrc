@@ -17,3 +17,7 @@ set noerrorbells "obvious one
 set ruler "always show position in file of cursor, often already a default
 set cmdheight=2 "height of command bar at the bottom
 set showcmd
+filetype indent on
+set hidden
+set autoindent
+set smartindent
