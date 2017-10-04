@@ -16,8 +16,8 @@ set visualbell "Instead of beeping all the time cursor blinks when you make an e
 set noerrorbells "obvious one
 set ruler "always show position in file of cursor, often already a default
 set cmdheight=2 "height of command bar at the bottom
-set showcmd
-filetype indent on
-set hidden
-set autoindent
+set showcmd "show partial command in last line of the screen
+filetype indent on "loads the proper indent file for the filetype
+set hidden "hides buffers instead of closing them when you open a new file but have unsaved changes
+set autoindent 
 set smartindent
