@@ -13,7 +13,13 @@ for links in $listoffiles; do
 done
 
 if [ ! -f $HOME/.ssh/config ]; then
-	touch $HOME/.ssh/config
+	if [ ! -d $HOME/.ssh ]; then
+        mkdir $HOME/.ssh
+    fi
+    cd $HOME/.ssh
+    touch config
+    chmod 700 $HOME/.ssh
+    chmod 640 $HOME/.ssh/config
 else
     echo ".ssh/config already exists"
 fi
@@ -22,7 +28,7 @@ sshtest=`grep -A 1 "HOST *" $HOME/.ssh/config | grep ServerAliveInterval | wc -l
 
 if [ "$sshtest" -ne 1 ]; then
     echo "HOST *" >> $HOME/.ssh/config
-    echo "ServerAliveInterval 120" >> $HOME/.ssh/config
+    echo "ServerAliveInterval 90" >> $HOME/.ssh/config
 else 
     echo "You probably already have the ServerAliveInterval set in your .ssh/config"
 fi

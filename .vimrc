@@ -21,3 +21,4 @@ filetype indent on "loads the proper indent file for the filetype
 set hidden "hides buffers instead of closing them when you open a new file but have unsaved changes
 set autoindent 
 set smartindent
+colorscheme delek
